@@ -15,48 +15,28 @@
     
 </head>
 <body>
-    <!-- <video id="video" src="video.mp4" autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg"></video> -->
-    <!-- <header>
-        <h1>PacoVERSE</h1>
-        <nav class="header-right">
-            <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png"></a>
-            <a href="https://discord.com/" target="_blank"><img src="img/discord.png"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
-            <img src="img/icons8-menú-48.png">
-        </nav>
-
-    </header> -->
-
-
-
     <header x-data="{ open: false }" class="header">
         <a href="index.html"><h1 id="titulo">PacoVERSE</h1></a>
-        <div class="header__logo">
-        </div>
         <button class="header__button-nav--open" x-on:click="open = true"><img src="img/icons8-menú-48.png"></button>
             <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
                 <div class="nav__button" x-on:click="open = false">
                     <button class="header__button-nav--close"><img src="img/icons8-x-48.png"></button>
                 </div>
                 <ul class="nav__ul">
+                    <!-- ICONOS REDES SOCIALES -->
                     <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" class="social-media-menu1"></a>
                     <a href="https://discord.com/" target="_blank"><img src="img/discord.png" class="social-media-menu1"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" class="social-media-menu1"></a>
+                    <!-- MENU NAVEGACIÓN -->
                     <li class="nav__item"><a href="#" class="nav__link" x-on:click="open = false">HOME</a></li>
                     <li class="nav__item"><a href="#" class="nav__link" x-on:click="open = false">ROADMAP</a></li>
                     <li class="nav__item"><a href="#equipo" class="nav__link" x-on:click="open = false">THE TEAM</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link" x-on:click="open = false">CONTACT US</a></li>
                 </ul>
-
             </nav>
-
-            
     </header>
-
-
-
-
-    <article id="main">
+    <!-- INICIO -->
+    <article id="home">
         <div class="text-box">
             <!--Este es el texto que vamos a animar -->
             <p id="animate-text">Hi, I'm Paco.</p>
@@ -65,28 +45,10 @@
         <h2>Details about PacoVERSE are coming soon.</h2>
     </article>
 
-<!-- 
-    <article class="secciones">
-        <p>CONTACT US!</p>
-
-    </article> -->
-
+    <!-- SECCIÓN EQIPO -->
     <article class="secciones" id="equipo">
         <h1>THE TEAM</h1>
-
-        <div class="container">
-            <!-- <figure class="container1">
-                <img src="img/paco.jpeg" alt=""/>
-                <figcaption>
-                  <h3>London</h3>
-                  <p>Welcome to London! Discover the best of London with Visit London, the official guide to England’s exciting capital.</p><a href="#" class="more">Read More</a>
-                </figcaption>
-            </figure> -->
-
-
-​
-
-
+        <div class="contenedor-equipo">
             <div class="box">
                 <img src="img/paco.jpeg" class="hover">
                 <br>
@@ -97,7 +59,6 @@
                     <a href="https://discord.com/" target="_blank"><img src="img/discord.png"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
                 </div>
-
             </div>
             <div class="box">
                 <img src="img/paco.jpeg">
@@ -109,7 +70,6 @@
                     <a href="https://discord.com/" target="_blank"><img src="img/discord.png"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
                 </div>
-
             </div>
             <div class="box">
                 <img src="img/paco.jpeg">
@@ -121,7 +81,6 @@
                     <a href="https://discord.com/" target="_blank"><img src="img/discord.png"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
                 </div>
-
             </div>
             <div class="box">
                 <img src="img/paco.jpeg">
@@ -133,9 +92,7 @@
                     <a href="https://discord.com/" target="_blank"><img src="img/discord.png"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
                 </div>
-
             </div>
-
             <div class="box">
                 <img src="img/paco.jpeg">
                 <br>
@@ -146,21 +103,17 @@
                     <a href="https://discord.com/" target="_blank"><img src="img/discord.png"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
                 </div>
-
             </div>
         </div>
     </article>
 
-
-
-    
-
-    <footer id="contact">
+    <!-- PIE DE PÁGINA -->
+    <footer>
         <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png"></a>
         <a href="https://discord.com/" target="_blank"><img src="img/discord.png"></a>
         <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
         <p>Copyright© 2022 PacoVERSE</p>
     </footer>
-    <script src="codigo.js"></script>
+    <script src="codigo.js"></script> <!-- enlace a código javascript -->
 </body>
 </html>
