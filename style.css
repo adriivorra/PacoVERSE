@@ -27,6 +27,8 @@ body {
 
   horizontalmente */
 
+  
+
   background-position: center center;
 
   /* Para que la imagen de fondo no se repita */
@@ -358,6 +360,14 @@ footer img:hover{
     margin: 0px 15px 0px 15px;
   }
 
+
+
+
+
+  .social-media-menu1{
+    display: none;
+  }
+
 }
 
 .header__button-nav--open, .header__button-nav--close {
@@ -430,9 +440,25 @@ footer img:hover{
   }
 
 
-  #social-media-menu {
+  /* #social-media-menu {
     display: none;
+  } */
+
+
+  
+
+  .social-media-menu1{
+    margin: 5px 20px 0px 0px;
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
   }
+
+  .social-media-menu1:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+  }
+
 
 
 
