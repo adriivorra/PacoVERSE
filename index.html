@@ -29,12 +29,24 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" class="social-media-menu1"></a>
                     <!-- MENU NAVEGACIÓN -->
                     <li class="nav__item"><a href="#" class="nav__link" x-on:click="open = false">HOME</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link" x-on:click="open = false">ROADMAP</a></li>
+                    <li class="nav__item"><a href="#roadmap" class="nav__link" x-on:click="open = false">ROADMAP</a></li>
                     <li class="nav__item"><a href="#equipo" class="nav__link" x-on:click="open = false">THE TEAM</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link" x-on:click="open = false">CONTACT US</a></li>
+                    <li class="nav__item" id="boton-popup"><a href="#contact" class="nav__link" x-on:click="open = false">CONTACT US</a></li>
                 </ul>
             </nav>
     </header>
+
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-close">X</div>
+            <div class="popup-content">
+                <p>Nuestras redes sociales</p>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" class="social-media-menu1"></a>
+                <a href="https://discord.com/" target="_blank"><img src="img/discord.png" class="social-media-menu1"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" class="social-media-menu1"></a>
+            </div>
+        </div>
+    </div>
     <!-- INICIO -->
     <article id="home">
         <div class="text-box">
@@ -45,11 +57,15 @@
         <h2>Details about PacoVERSE are coming soon.</h2>
     </article>
 
+    <article class="secciones" id="roadmap">
+        <h1>ROADMAP</h1>
+    </article>
+
     <!-- SECCIÓN EQIPO -->
     <article class="secciones" id="equipo">
         <h1>THE TEAM</h1>
         <div class="contenedor-equipo">
-            <div class="box">
+            <div class="box" id="p1">
                 <img src="img/paco.jpeg" class="hover">
                 <br>
                 <span>Persona 1</span>
@@ -60,7 +76,7 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="p2">
                 <img src="img/paco.jpeg">
                 <br>
                 <span>Persona 2</span>
@@ -71,7 +87,7 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="p3">
                 <img src="img/paco.jpeg">
                 <br>
                 <span>Persona 3</span>
@@ -82,7 +98,7 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="p4">
                 <img src="img/paco.jpeg">
                 <br>
                 <span>Persona 4</span>
@@ -93,7 +109,7 @@
                     <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"></a>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="p5">
                 <img src="img/paco.jpeg">
                 <br>
                 <span>Persona 5</span>
@@ -106,6 +122,8 @@
             </div>
         </div>
     </article>
+
+    
 
     <!-- PIE DE PÁGINA -->
     <footer>

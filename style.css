@@ -5,7 +5,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-    color: white;
+  color: white;
   user-select: none;
   user-zoom: none;
   scroll-behavior: smooth;
@@ -407,7 +407,9 @@ footer img:hover{
     line-height: 2.6;
   }
   
-  .box:hover { flex: 1 1 50%; }
+  .box:hover { 
+    flex: 1 1 50%; 
+  }
   .box:hover > img {
     width: 100%;
     height: 100%;  
@@ -427,36 +429,35 @@ footer img:hover{
     margin: 0px 15px 0px 15px;
     font-size: 30px;
     text-align: center;
-    }
+  }
   
-    .social-icons-avatar{
-      display: none;
-      position:relative;
-      bottom:60%;
-      left:0px;
-      visibility:hidden;
-      font-size: 30px;
-    }
-  
-    .box:hover .social-icons-avatar {
-      display: block;
-    }
-    
-    .box:hover .text, .box:hover .social-icons-avatar {
-    visibility:visible;
+  .social-icons-avatar{
+    display: none;
+    position:relative;
+    bottom:60%;
+    left:0px;
+    visibility:hidden;
     font-size: 30px;
-    }
-    
+  }
+
+  .box:hover .social-icons-avatar {
+    display: block;
+  }
+  
+  .box:hover .text, .box:hover .social-icons-avatar {
+  visibility:visible;
+  font-size: 30px;
+  }
+  
+
   
 }
 
 
 .secciones{
   text-align: center;
-  margin-top: 40px;
   background-color: rgb(26, 26, 66);
   padding-top: 20px;
-  margin-top: 40px;
 }
 
 .secciones h1{
@@ -478,4 +479,65 @@ footer img:hover{
 
 #social-media-menu img{
   margin: 10px;
+}
+
+
+
+#roadmap{
+  background-image: url(img/22334-oscuros.jpg) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+.popup-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: 1s;
+  text-align: center;
+}
+
+.popup {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  background: rgb(97, 93, 93);
+  margin: 10% auto;
+  padding: 20px;
+  position: relative;
+  transition: 1s;
+
+  
+}
+
+.popup-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 50%;
+  margin-left: 55px;
+  margin-top: 10px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 1s;
 }
