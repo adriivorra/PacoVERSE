@@ -45,6 +45,13 @@ header h1 {
   transition: 0.5s;
 }
 
+#logo-magic{
+  padding: 12px;
+  position: absolute;
+  left: 12%;
+  top: 0;
+}
+
 header h1:hover{
   opacity: 0.5;
   transition: 0.5s;
@@ -245,6 +252,7 @@ footer img:hover{
     overflow-x: auto; 
     overflow-y: hidden;
     white-space: nowrap;
+
   }
 
   .box {
@@ -450,7 +458,7 @@ footer img:hover{
   }
   
 
-  
+
 }
 
 
@@ -540,4 +548,22 @@ footer img:hover{
   cursor: pointer;
   font-size: 1.5rem;
   transition: 1s;
+}
+
+#magic_icon{
+  height: 70%;
+}
+
+/* #magic_icon_footer{
+  height: 35px;
+  width: 40px;
+  margin-top:0px;
+
+} */
+
+#boton_volumen{
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  background-color: transparent;
 }
