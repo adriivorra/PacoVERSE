@@ -114,22 +114,20 @@ window.addEventListener("load", function(){
 
 
 
-  // MUSICA DE FONDO DE LA WEB
-  let music = new Audio('musica_fondo.mp3');
-  music.play();
-  // music.loop =true;
-  music.playbackRate = 2;
 
 
+
+  document.getElementById('music').play();
+  document.getElementById('music').loop =true;
   let musicaIniciada = true;
   document.getElementById('boton_volumen').addEventListener('click', function() {
     if (musicaIniciada == true){
       document.getElementById('altavoz').src = 'img/altavoz_sin_sonido.png';
-      music.pause();
+      document.getElementById('music').pause();
       musicaIniciada = false;
     }else{
       document.getElementById('altavoz').src = 'img/altavoz_sonido.png';
-      music.play();
+      document.getElementById('music').play();
       musicaIniciada = true;
     }
   });
@@ -137,5 +135,48 @@ window.addEventListener("load", function(){
 
 
 
+  // Carga un sonido a través de su fuente y lo inyecta de manera oculta
+  // const cargarSonido = function () {
+  //   const sonido = document.createElement("audio");
+  //   sonido.src = 'musica_fondo.mp3';
+  //   sonido.setAttribute("preload", "auto");
+  //   sonido.setAttribute("controls", "none");
+  //   sonido.style.display = "none";
+  //   document.body.appendChild(sonido);
+  //   return sonido;
+  // };
+
+  // // Inicia el sonido de fondo al entrar en la pagina
+  // let pagina = document.querySelector("html");
+  // const audioInicio = cargarSonido("audios/pantallaInicio.mp3");
+  // pagina.addEventListener('mouseenter', function() {
+  //     audioInicio.play();
+  // });
+  // // Para el sonido al salir de la pagina
+  // pagina.addEventListener('mouseleave', function() {
+  //     audioInicio.pause();
+  // });
+
+
+
 
 });
+
+
+
+
+  // // MUSICA DE FONDO DE LA WEB
+  // let music = new Audio('musica_fondo.mp3');
+  // music.play();
+  // music.loop =true;
+  // music.playbackRate = 2;
+
+
+  // let pagina = document.querySelector("html");
+  // pagina.addEventListener('mouseenter', function() {
+  //   music.play();
+  // });
+
+
+
+
