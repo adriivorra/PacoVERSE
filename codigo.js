@@ -116,8 +116,42 @@ window.addEventListener("load", function(){
 
 
 
+  let cont = 1;
+  let boxes = document.getElementsByClassName('box');
+  setTimeout(retraso1, 3000);
+  function retraso1() {
 
-  document.getElementById('music').play();
+
+    // let boxes = document.getElementsByClassName('box');
+    // for (let i = 0; i < boxes.length; i++)
+      // boxes[i].classList.add('box1');
+
+
+      
+      document.querySelector("#b" + cont).classList.add('box1');
+      setTimeout(retraso2, 3000);
+
+  }
+
+
+
+  function retraso2(){
+    document.querySelector("#b" + cont).classList.remove('box1');
+    document.querySelector("#b" + cont).classList.add('box');
+    cont++;
+    if (cont > boxes.length)
+      cont = 1;
+    document.querySelector("#b" + cont).classList.add('box1');
+    retraso1();
+  };
+
+
+
+
+
+
+
+  // MUSICA DE FONDO
   document.getElementById('music').loop =true;
   let musicaIniciada = true;
   document.getElementById('boton_volumen').addEventListener('click', function() {
