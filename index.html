@@ -15,6 +15,7 @@
     
 </head>
 <body>
+    <button id="boton_volumen"><img src="img/altavoz_sonido.png" alt="altavoz" id="altavoz"></button>
     <!-- <embed src="musica_fondo.mp3" loop="true" autostart="true" width="180px" height="80px" id="music"></embed> -->
     <audio src="musica_fondo.ogg" autoplay id="music"></audio>
     <header x-data="{ open: false }" class="header">
@@ -29,7 +30,7 @@
                 <ul class="nav__ul">
                     <!-- ICONOS REDES SOCIALES -->
                     
-                    <button id="boton_volumen" class="social-media-menu1"><img src="img/altavoz_sonido.png" alt="altavoz" id="altavoz"></button>
+
                     <a href="" target="_blank"><img src="img/logo.ca418d755e6ce4e95fd276056b9285f2.png" class="social-media-menu1" id="magic_icon"></a>
                     <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twitter.png" class="social-media-menu1"></a>
                     <a href="https://discord.com/" target="_blank"><img src="img/discord.png" class="social-media-menu1"></a>
@@ -37,6 +38,7 @@
                     <!-- MENU NAVEGACIÓN -->
                     <li class="nav__item"><a href="#" class="nav__link" x-on:click="open = false">HOME</a></li>
                     <li class="nav__item"><a href="#roadmap" class="nav__link" x-on:click="open = false">ROADMAP</a></li>
+                    <li class="nav__item"><a href="#marketplace" class="nav__link" x-on:click="open = false">MARKETPLACE</a></li>
                     <li class="nav__item"><a href="#equipo" class="nav__link" x-on:click="open = false">THE TEAM</a></li>
                     <li class="nav__item" id="boton-popup"><a href="#contact" class="nav__link" x-on:click="open = false">CONTACT US</a></li>
                 </ul>
@@ -66,6 +68,13 @@
 
     <article class="secciones" id="roadmap">
         <h1>ROADMAP</h1>
+    </article>
+
+    <article class="secciones" id="marketplace">
+        <h1>MARKETPLACE</h1>
+        <div class="nft">
+            <img src="img/paco.jpeg" id="i3">
+        </div>
     </article>
 
     <!-- SECCIÓN EQIPO -->
